@@ -5,7 +5,6 @@ import 'body.dart';
 import '../constants.dart';
 
 class HomeScreen extends StatelessWidget {
-  // const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,7 @@ class HomeScreen extends StatelessWidget {
           icon: SvgPicture.asset("assets/icons/cart.svg", color: kTextColor),
           onPressed: () {  },
         ),
-        SizedBox(width: kDefaultPaddin / 2)
+        SizedBox(width: kDefaultPadding / 2)
       ],
     );
   }

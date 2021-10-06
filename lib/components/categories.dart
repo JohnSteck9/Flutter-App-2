@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_2/constants.dart';
 
 class Categories extends StatefulWidget {
-  // const Categories({Key? key}) : super(key: key);
 
   @override
   _CategoriesState createState() => _CategoriesState();
@@ -25,7 +24,7 @@ class _CategoriesState extends State<Categories> {
 
   Widget buildCategory(int index) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -37,7 +36,7 @@ class _CategoriesState extends State<Categories> {
               )
           ),
           Container(
-            margin: EdgeInsets.only(top: kDefaultPaddin / 4 ),
+            margin: EdgeInsets.only(top: kDefaultPadding / 4 ),
             height: 2,
             width: 30,
             color: selectedIndex == index ? Colors.black : Colors.transparent,
